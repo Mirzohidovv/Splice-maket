@@ -1,0 +1,259 @@
+/* 
+1200px - container = max-width: 970px;
+992px - container = max-width: 750px;
+768px - container = max-width: unset;
+576px - container = max-width: unset;
+475px - container = max-width: unset;
+375px - container = max-width: unset;
+320px - container = max-width: unset;
+*/
+
+@media (max-width:1200px) {
+    .creators-cards {
+        overflow: hidden;
+        overflow-x: auto;
+
+    }
+
+    .card {
+        flex-shrink: 1;
+    }
+}
+
+@media (max-width:992px) {
+
+
+    .container {
+        max-width: 750px;
+    }
+
+    .sounds-content {
+        flex-direction: column;
+        padding-top: 20px;
+        text-align: center;
+    }
+
+    .experience-content {
+        flex-direction: column-reverse;
+        padding-top: 10px;
+    }
+
+    .experience-right {
+        padding-top: 20px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .sounds-left {
+        align-items: center;
+    }
+
+    .gear-content {
+        padding-top: 25px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .gear-left {
+        text-align: center;
+    }
+
+    .gear-button {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width:870px) {
+
+    .container {
+        max-width: unset;
+    }
+
+    .header-content {
+        max-width: 100%;
+        justify-content: center;
+        column-gap: 120px;
+    }
+
+    .header__content-menu {
+        display: flex;
+    }
+
+
+    .header__content-menu:focus~.header-menu {
+        left: 0px;
+    }
+
+    .header-menu {
+        position: absolute;
+        left: -2000px;
+        background-color: rgb(68, 63, 63);
+        flex-direction: column;
+        transition: .7s;
+        top: 73px;
+        padding: 15px 40px;
+        backdrop-filter: blur(8px);
+        row-gap: 20px;
+        z-index: 1;
+        border-radius: 0 0 15px 0;
+
+    }
+
+    .header-link:hover {
+        color: black
+    }
+}
+
+@media (max-width:768px) {
+    .container {
+        max-width: unset;
+    }
+}
+
+@media (max-width:555px) {
+    .header-content {
+        max-width: unset;
+        column-gap: 60px;
+    }
+}
+
+@media (max-width:475px) {
+    .buttons {
+        column-gap: 10px;
+    }
+
+    .header-content {
+        column-gap: 30px;
+    }
+
+    .button-sign {
+        padding: 10px 15px;
+        font-size: 14px;
+
+    }
+
+    .button-log {
+        font-size: 14px;
+    }
+
+    .header-menu {
+        top: 74px;
+    }
+    .splice-title{
+        font-size: 40px;
+    }
+    .footer-content{
+        flex-direction: column;
+    }
+    .footer-menu{
+        flex-direction: column;
+        width: 100%;
+        row-gap: 24px;
+        padding-top: 20px;
+    }
+}
+
+@media (max-width:575px) {
+    .navbar-title {
+        max-width: 450px;
+        font-size: 55px;
+    }
+
+    .navbar-text {
+        max-width: 340px;
+        font-size: 15px;
+    }
+
+    .navbar-button {
+        padding: 12px 25px;
+        font-size: 14px;
+    }
+
+    .header-content {
+        column-gap: 50px;
+    }
+
+
+    .sounds-content {
+        width: 100%;
+    }
+
+    .sounds__right-img {
+        width: 100%;
+    }
+
+    .experience-content {
+        width: 100%;
+    }
+
+    .experience-img {
+        width: 100%;
+    }
+
+    .experience-title {
+        font-size: 24;
+    }
+
+    .experience-text {
+        font-size: 12px;
+    }
+
+    .gear-content {
+        width: 100%;
+    }
+
+    .gear-img {
+        width: 100%;
+    }
+
+    .gear__left-text {
+        font-size: 14px;
+    }
+
+    .gear__left-title {
+        font-size: 24px;
+    }
+}
+
+@media (max-width:375px) {
+    .header-content {
+        column-gap: 25px;
+    }
+
+
+    .header-menu {
+        top: 66px;
+    }
+
+    .header-logo {
+        width: 80px;
+        height: 28px;
+    }
+
+    .button-sign {
+        padding: 5px 10px;
+        font-size: 12px;
+
+    }
+
+    .button-log {
+        font-size: 14px;
+    }
+
+    .navbar-title {
+        max-width: 430px;
+        font-size: 45px;
+    }
+
+    .navbar-text {
+        max-width: 320px;
+        font-size: 13px;
+    }
+
+    .navbar-button {
+        padding: 10px 20px;
+        font-size: 12px;
+    }
+
+}
